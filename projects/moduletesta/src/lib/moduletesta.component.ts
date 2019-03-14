@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-moduletesta',
   template: `
     <p>
-      moduletesta works, update me v1.2!
+      moduletesta works, update me v2.0!
     </p>
   `,
   styles: []
