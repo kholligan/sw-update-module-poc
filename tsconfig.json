@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "moduletesta": [
+        "dist/moduletesta"
+      ],
+      "moduletesta/*": [
+        "dist/moduletesta/*"
+      ]
+    }
   }
 }
