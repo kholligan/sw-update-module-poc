@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ModuletestaModule } from 'projects/moduletesta/src/public_api';
+import { MatSnackBarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SwUpdateService } from './sw-update.service';
 
 @NgModule({
   declarations: [
@@ -13,11 +16,15 @@ import { ModuletestaModule } from 'projects/moduletesta/src/public_api';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    MatSnackBarModule,
     ModuletestaModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [
+    SwUpdateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

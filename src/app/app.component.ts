@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SwUpdateService } from './sw-update.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sw-update-module-poc';
+
+  constructor(private swUpdate: SwUpdateService) {}
 }
