@@ -10,4 +10,8 @@ export class AppComponent {
   title = 'sw-update-module-poc';
 
   constructor(private swUpdate: SwUpdateService) {}
+
+  public checkForUpdate() {
+    this.swUpdate.checkForUpdates();
+  }
 }

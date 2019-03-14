@@ -21,9 +21,10 @@ export class SwUpdateService {
           window.location.reload();
         });
     });
+  }
 
-    setInterval(() => {
-      this.swUpdate.checkForUpdate();
-    }, 10000);
+  public checkForUpdates() {
+    console.log('checking for updates');
+    this.swUpdate.checkForUpdate();
   }
 }

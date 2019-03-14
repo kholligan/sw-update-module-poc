@@ -3,13 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuletestaComponent } from 'projects/moduletesta/src/public_api';
 
 const routes: Routes = [
+  // {
+  //   path: 'moduletesta',
+  //   component: ModuletestaComponent
+  // },
   {
-    path: 'moduletesta',
-    component: ModuletestaComponent
+    path: 'lazy',
+    loadChildren: './lazy/lazy.module#LazyModule'
   },
   {
     path: '',
-    redirectTo: '/moduletesta',
+    redirectTo: '/lazy',
     pathMatch: 'full'
   },
 ];
