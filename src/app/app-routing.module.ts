@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: './lazy/lazy.module#LazyModule'
   },
   {
+    path: 'package',
+    loadChildren: './lazy/package-test.module#PackageTestModule'
+  },
+  {
     path: '',
     redirectTo: '/lazy',
     pathMatch: 'full'
